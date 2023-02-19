@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.10.3/bootstrap-icons.css">
+</head>
+<body ng-app="myapp">
+    
+    <div class="container-liquid" ng-controller="myctrl">
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark " ng-include="'menu.html'">
+          
+          
+        </nav>
+        <div class="container">
+          </nav>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container col-sm-6 py-5 border border-1">
+        <h2>Quên Mật Khẩu</h2>
+        <p>Bạn quên mật khẩu? Nhập địa chỉ email để lấy lại mật khẩu qua email.</p>
+        <hr>
+        <form>
+        
+            <div class="mb-3 pt-2">
+      
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <span class="text-danger">*</span>
+              <input type="email" class="form-control bg-light" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Hãy nhập email mà bạn đã đăng kí</div>
+            </div>
+           
+        
+      
+           <hr>
+          <div class="pt-3">
+            <p>Bạn chưa có tài khoản đăng kí <a href="dangki.html" class="text-decoration-none">tại đây</a> </p>
+        
+           <button type="button" class="btn btn-dark">Lấy Lại Mật Khẩu</button>
+        
+        </div>
+     
+          </form>
+         
+    </div>
+    <br>
+    <footer ng-include="'footer.html'">
+
+  
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="asm.js"> </script>
+    
+</body>
+</html>

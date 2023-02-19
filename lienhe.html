@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.10.3/bootstrap-icons.css">
+</head>
+<body ng-app="myapp">
+    <div class="container-liquid" ng-controller="myctrl">
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark " ng-include="'menu.html'">
+          
+          
+        </nav>
+      </div>
+      <div class="container">
+      <div class="row col-sm-12 pt-5">
+        <div class="col-sm-5 pt-5">
+                <h4>Thông tin liên Hệ</h4> 
+                <div class="row pt-4">
+                  <i class="bi bi-envelope-at"> <b>Email: </b>duyenntmps21497@fpt.edu.vn</i>
+                 
+
+             <!-- <a href="" class="text-decoration-none text-dark"> <i class="bi bi-envelope-at"> <b>Email:</b></i>
+                  duyenntmps21497@fpt.edu.vn</a> -->
+                 
+                </div> 
+                <div class="row pt-4">
+                  <i class="bi bi-telephone"><b> Điện thoại: 
+                  </b>0795949529</i>
+                </div>
+                <div class="row pt-4">
+                  <i class="bi-alarm"><b> Thời gian làm việc: </b>Thứ 2 đến thứ 7 từ 9h đến 18h</i>
+                </div>
+               
+    
+        </div>
+        <div class="row col-sm-6 pt-5">
+            <h4>Hãy gửi những thắc mắc của bạn cho chúng tôi</h4>
+           <p>Nếu bạn có thắc mắc gì, có thể gửi yêu cầu cho chúng tôi, và chúng tôi sẽ liên lạc lại với bạn sớm nhất có thể .</p>
+            <form class="pt-2">
+              <div class="row">
+                  <div class="form-group col-sm-6">
+                      <label for="">Họ</label>
+                      <span class="text-danger">*</span>
+                      <input type="text" class="form-control bg-light">
+                  </div>
+                  <div class="form-group col-sm-6">
+                      <label for="">Tên</label>
+                      <span class="text-danger">*</span>
+                      <input type="text" class="form-control bg-light">
+                  </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <span class="text-danger">*</span>
+                <input type="email" class="form-control bg-light" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+              </div>
+              <div class="mb-3">
+                <label for="">Nội dung</label>
+                <textarea name="" id=""  rows="3"class="form-control"></textarea>
+              </div>
+          
+            <div class="pt-2">
+             <a href="#">   <button type="button" class="btn btn-dark">Gửi thắc mắc đến chúng tôi</button></a>
+          
+          </div>
+       
+            </form>
+        </div>
+      </div>
+    </div>
+    <br>
+    <footer class="row pt-5">
+      <div class="panel panel-default bg-dark text-white">
+          <div class="panel panel-heading text-center pt-2">
+            <p>Email Vui Lòng Liên Hệ: duyenntmps21497@fpt.edu.vn</p>
+            <a href="https://www.facebook.com/profile.php?id=100012720870551" class="text-decoration-none text-center"><p class="text-white">FOLLOW <i class="bi bi-facebook"></i></p></a>
+          </div>
+      </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="asm.js"> </script>
+</body>
+</html>

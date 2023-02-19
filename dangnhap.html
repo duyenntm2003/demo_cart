@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.10.3/bootstrap-icons.css">
+</head>
+<body ng-app="myapp">
+    
+    <div class="container-liquid" ng-controller="myctrl">
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark " ng-include="'menu.html'">
+          
+          
+        </nav>
+        <div class="container">
+          </nav>
+    </div>
+    <br>
+    <br>
+    
+    <div class="container col-sm-6 py-5 border border-1">
+        <h2>Đăng Nhập Tài Khoản</h2>
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <span class="text-danger">*</span>
+              <input type="email" class="form-control bg-light" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Mật Khẩu</label>
+              <span class="text-danger">*</span>
+              <input type="password" class="form-control bg-light" id="exampleInputPassword1">
+            </div>
+        
+           <a href="quenmk.html" class="text-decoration-none">Quên Mật Khẩu?</a>
+           <hr>
+          <div class="pt-5">
+           <button type="button" class="btn btn-dark">Đăng Nhập</button>
+           <a href="dangki.html">   <button type="button" class="btn btn-dark">Đăng Ký</button></a>
+        
+        </div>
+     
+          </form>
+         
+    </div>
+    <br>
+    <br>
+    
+    <footer ng-include="'footer.html'">
+
+  
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="asm.js"> </script>
+    
+</body>
+</html>

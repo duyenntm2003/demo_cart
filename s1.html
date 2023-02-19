@@ -1,0 +1,40 @@
+<div class="container">
+  <h2 class="text-center">Sản phẩm liên quan</h2>
+  <div class="d-grid  x  justify-content-md-end">
+    <p>Tìm giá: <input ng-model="searchtxt.price" type="text" placeholder="nhập giá từ 100-1000"></p>
+
+  </div>
+
+  <div class="col-md-12 ">
+
+    <div class="row pt-4"></div>
+    <div class="row  col-sm-12 ">
+      <div class="row">
+
+        <div class="col-sm-2" ng-repeat="sp in products |limitTo: 12 : batdau | filter: searchtxt">
+          <div class="row pt-4">
+            <img style="height: 200px;  width: 200px " class="img-thumbnail" src="{{sp.image}}" alt="">
+            <div class="row text-center">
+              <div>{{sp.name}}</div>
+              <div><label>{{sp.price | number : 0}}VNĐ</label></div>
+              <div class="pt-3 ps-4">
+                <button type="button" class="btn btn-dark col-sm-12 " ng-click="add_cart(sp)">Thêm giỏ
+                  hàng</button>
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="btn-group pt-5 " ng-repeat="trang in sotrang()" style="left: 46%;">
+      <a href="#" class=" btn btn-dark text-white btn-lg border border-1 "
+        ng-click="chuyentrang(trang)">{{trang}}</a>
+    </div>
+
+  </div>
+</div>

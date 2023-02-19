@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.10.3/bootstrap-icons.css">
+</head>
+<body ng-app="myapp">
+    <div class="container-liquid" ng-controller="myctrl">
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark " ng-include="'menu.html'">
+          
+          
+        </nav>
+      <div class="container pt-1 ">
+       
+      
+      <div class="row">
+      <article class="col-sm-8">
+        
+       <h1 class="pt-2">Tin tức</h1>
+       <hr>
+    <div class="col-sm-12">
+        <div class="row ps-1">
+      
+           <div class="col-sm-4">
+          
+             <img src="https://file.hstatic.net/200000013792/article/76693333_793766094400231_857628338204704768_o_61199a70d08f47abb01a876785fa94c4_large.jpg" class="img-thumbnail" alt="...">
+           
+           </div>
+           <div class="col-sm-6 pt-2">
+          
+           <h2>Bộ sưu tập street gang</h2>
+            <p>Thời trang đường phố gắn liền với những thiết kế cá tính, táo bạo và nhiều màu sắc nhưng không  thiếu mất đi tính thực tiễn của thời trang – đó là sự đa dụng.
+
+                Mục tiêu  là đem đến những trải nghiệm sản phẩm tuyệt vời nhất, với mong muốn khách hàng </p>  
+           </div>
+        </div>
+        <hr>
+        <div class="row pt-5">
+      
+            <div class="col-sm-4">
+           
+              <img src="img/colorcc.png" class="img-thumbnail" alt="...">
+            
+            </div>
+            <div class="col-sm-6 pt-2">
+           <h2>Bộ sưu tập color</h2>
+            
+             <p>Nằm trong bộ sưu tập Color Collection với phong cách thiết kế đã trở thành thương hiệu .
+                chúng tôi đem đến cho các bạn những mẫu sản phẩm mới nhất
+             </p>  
+            </div>
+         </div>
+    </div>
+      </article>
+      <aside class="col-sm-3">
+<div class="row">
+    <h2 class="pt-4">Bài viết mới nhất</h2>
+    
+    <div class="row">
+        <div class="col-sm-6 pt-3">
+           
+            <img src="https://file.hstatic.net/200000013792/article/76693333_793766094400231_857628338204704768_o_61199a70d08f47abb01a876785fa94c4_large.jpg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="col-sm-6 pt-3">
+         
+          
+           <p>Bộ sưu tập của street gang
+           </p>  
+          </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-6 pt-3">
+           
+            <img src="img/colorcc.png" class="img-thumbnail" alt="...">
+          </div>
+          <div class="col-sm-6 pt-4">
+         
+          
+           <p>Bộ sưu tập color
+           </p>  
+          </div>
+        </div>
+
+</div>
+<div class="row pt-5">
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+             Danh mục
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+
+                <ul class="list-group ">
+                    <li class="list-group-item" >
+                        <a href="index.html"class="text-decoration-none text-dark"> Trang chủ</a>
+                        </li>
+                        <li class="list-group-item" >
+                            <a href="sanpham.html"class="text-decoration-none text-dark"> Sản phẩm</a>
+                            </li>
+                            <li class="list-group-item" >
+                                <a href="blog.html"class="text-decoration-none text-dark"> Blog</a>
+                                </li>
+                                <li class="list-group-item" >
+                                    <a href="lienhe.html"class="text-decoration-none text-dark"> Liên hệ</a>
+                                    </li>
+                                    
+                    
+                </ul>
+            </div>
+          </div>
+        </div>
+</div>
+      </aside>
+    </div>
+      </div>
+      <footer ng-include="'footer.html'">
+
+  
+      </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="asm.js"> </script>
+</body>
+</html>
